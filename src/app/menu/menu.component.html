@@ -1,0 +1,10 @@
+<div class="ui items" >
+<app-menu-button *ngFor="let b of menuButtons"
+                 [theButton]="b"
+                 (click)="onClick(b)"
+                 [negativeClass]="isSelected(b)"
+                 [class.hidden]="(b.visibility==='hidden') ? true : false"
+  ></app-menu-button>
+</div>
+<!---->
+<!---->
